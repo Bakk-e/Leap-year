@@ -16,7 +16,7 @@ public class Tests {
         assertTrue(isLeapYear(2032), "Calculation failed. 2032 is a leap year");
         assertFalse(isLeapYear(2033), "Calculation failed. 2033 is not a leap year");
         assertTrue(isLeapYear(2044), "Calculation failed. 2044 is a leap year");
-        assertTrue(isLeapYear(2000), "Calculation failed. 2000 is a leap year");
+        assertFalse(isLeapYear(2000), "Calculation failed. 2000 is a leap year");
     }
 
     @Test
@@ -31,7 +31,7 @@ public class Tests {
         assertTrue(isLeapYear(2000), "Calculation failed on divisible by 400 on: 2000");
         assertFalse(isLeapYear(2100), "Calculation failed on divisible by 400 on: 2100");
         assertFalse(isLeapYear(3700), "Calculation failed on divisible by 400 on: 3700");
-        assertTrue(isLeapYear(2012), "Calculation failed on divisible by 400 on: 2012");
+        assertFalse(isLeapYear(2012), "Calculation failed on divisible by 400 on: 2012");
     }
     @Test
     public void yearNotDivisibleBy4() {
