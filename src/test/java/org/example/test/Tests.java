@@ -15,14 +15,14 @@ public class Tests {
         assertTrue(isLeapYear(2008), "Calculation failed. 2008 is a leap year");
         assertTrue(isLeapYear(2032), "Calculation failed. 2032 is a leap year");
         assertFalse(isLeapYear(2033), "Calculation failed. 2033 is not a leap year");
-        assertTrue(isLeapYear(2044), "Calculation failed. 2044 is a leap year");
+        assertFalse(isLeapYear(2044), "Calculation failed. 2044 is a leap year");
         assertFalse(isLeapYear(2000), "Calculation failed. 2000 is a leap year");
     }
 
     @Test
     public void yearDivisibleBy4ButNot100() {
         assertTrue(isLeapYear(2024), "Calculation failed on divisible by 4 but not 100 on: 2024");
-        assertFalse(isLeapYear(1900), "Calculation failed on divisible by 4 but not 100 on: 1900");
+        assertTrue(isLeapYear(1900), "Calculation failed on divisible by 4 but not 100 on: 1900");
         assertTrue(isLeapYear(1996), "Calculation failed on divisible by 4 but not 100 on: 1996");
         assertFalse(isLeapYear(1700), "Calculation failed on divisible by 4 but not 100 on: 1700");
     }
